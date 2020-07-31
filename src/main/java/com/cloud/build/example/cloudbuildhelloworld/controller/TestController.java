@@ -13,4 +13,6 @@ public class TestController {
     public String getHelloWorld() {
         return "Hello World";
     }
+
+    public void m1() {}
 }
