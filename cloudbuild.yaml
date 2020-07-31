@@ -6,4 +6,4 @@ steps:
     args: ['clean', 'install', '-DskipTests']
   - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 'gcr.io/test-pro-285015/cloudBuildHelloWorld', '.']
-  images: ['gcr.io/$PROJECT_ID/cloudBuildHelloWorld']
+  images: ['gcr.io/test-pro-285015/cloudBuildHelloWorld']
