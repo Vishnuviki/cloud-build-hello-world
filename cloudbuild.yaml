@@ -5,6 +5,6 @@ steps:
     entrypoint: 'mvn'
     args: ['clean', 'install', '-DskipTests']
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'gcr.io/test-pro-285015/cloudBuildHelloWorld-1.0.0', '.']
-images: ['gcr.io/test-pro-285015/cloudBuildHelloWorld-1.0.0']
+    args: ['build', '-t', 'gcr.io/test-pro-285015/cloudBuildHelloWorld', '.']
+images: ['gcr.io/test-pro-285015/cloudBuildHelloWorld']
 
