@@ -6,4 +6,9 @@ steps:
     args: ['clean', 'install', '-DskipTests']
   - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 'gcr.io/test-pro-285015/cloudBuildHelloWorld', '.']
-images: ['gcr.io/test-pro-285015/cloudBuildHelloWorld']
+  # Push the container image to Container Registry
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'gcr.io/test-pro-285015/cloudBuildHelloWorld']
+images:
+  - 'gcr.io/test-pro-285015/cloudBuildHelloWorld'
+
