@@ -5,10 +5,6 @@ FROM openjdk:11-jdk
 # Add a volume pointing to /tmp
 VOLUME /tmp
 
-# Make port 80 available to the world outside
-this container
-EXPOSE 80
-
 # The application’s jar file
 ARG JAR_FILE=target/cloudBuildHelloWorld-1.0.0.jar
 
