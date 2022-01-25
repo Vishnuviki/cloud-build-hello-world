@@ -11,7 +11,7 @@ public class TestController {
     @RequestMapping(value = "/test", method = RequestMethod.GET,
             produces = MediaType.APPLICATION_JSON_VALUE)
     public String getHelloWorld() {
-        return "Hello World";
+        return "Hello Worl";
     }
 
     public void m1() {}
