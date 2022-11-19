@@ -15,3 +15,5 @@ steps:
     args: ['run', 'deploy', 'testservice', '--image', 'gcr.io/$PROJECT_ID/myimage', '--region', 'us-central1', '--platform', 'managed', '--allow-unauthenticated']
 images:
   - 'gcr.io/$PROJECT_ID/myimage'
+  
+  
