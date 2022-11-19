@@ -16,4 +16,3 @@ steps:
 images:
   - 'gcr.io/$PROJECT_ID/myimage'
   
-  
