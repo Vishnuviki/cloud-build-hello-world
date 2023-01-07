@@ -6,11 +6,17 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class TestController {
+public class ProbeController {
 
-    @RequestMapping(value = "/hello", method = RequestMethod.GET,
+    @RequestMapping(value = "/test", method = RequestMethod.GET,
             produces = MediaType.APPLICATION_JSON_VALUE)
-    public String getHelloWorld() {
-        return "Hello World application";
+    public String readinessProbe() {
+        return "healthy";
+    }
+
+    @RequestMapping(value = "/healthy", method = RequestMethod.GET,
+            produces = MediaType.APPLICATION_JSON_VALUE)
+    public String livenessProbe() {
+        return "healthy";
     }
 }
