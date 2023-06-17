@@ -14,7 +14,7 @@ public class ProbeController {
         return "healthy";
     }
 
-    @RequestMapping(value = "/healthy", method = RequestMethod.GET,
+    @RequestMapping(value = "/health", method = RequestMethod.GET,
             produces = MediaType.APPLICATION_JSON_VALUE)
     public String livenessProbe() {
         return "healthy";
